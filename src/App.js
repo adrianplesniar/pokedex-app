@@ -31,7 +31,7 @@ const App = () => {
   return (
     <div className={darkMode ? "app-container dark" : "app-container"} >
       <h1>Pokedex</h1>
-      <button onClick={() => setDarkMode(darkMode => !darkMode)}>Dark mode</button>
+      <button className="dark-mode" onClick={() => setDarkMode(darkMode => !darkMode)}>{!darkMode ? "DARK MODE" : "LIGHT MODE"}</button>
       <div className="pokemon-container">
         <div className="all-container">
           {allPokemons.map( (pokemonStats, index) => 

@@ -17,9 +17,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* .dark button {
-  color: white;
-} */
 
 .app-container {
   display: flex;
@@ -80,13 +77,13 @@ h3 {
   margin-top: 1rem;
   border: none;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.185);
+  background-color: rgba(255, 238, 0, 0.849);
   transition: opacity .2s ease-out;
 }
 .detail-wrapper button:hover {
   opacity: 0.8;
 }
-.load-more {
+.load-more, .dark-mode {
   background-color: #fff;
   border: 0 solid #e2e8f0;
   border-radius: 1.5rem;
@@ -110,7 +107,7 @@ h3 {
   touch-action: manipulation;
 
 }
-.load-more:hover {
+.load-more:hover, .dark-mode:hover {
   background-color: #1e293b;
   color: #fff;
 }
