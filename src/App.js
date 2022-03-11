@@ -25,7 +25,7 @@ const App = () => {
 
  useEffect(() => {
   getAllPokemons()
- })
+ }, [])
 
   return (
     <div className={darkMode ? "app-container dark" : "app-container"} >
